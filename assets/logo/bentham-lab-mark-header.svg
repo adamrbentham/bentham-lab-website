@@ -1,0 +1,25 @@
+<svg viewBox="90 134 236 130" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<g id="hpetalShape">
+  <path d="M0,-4 C -9,-22 -25,-34 -23,-58 C -21,-78 -9,-90 0,-95 C 9,-90 21,-78 23,-58 C 25,-34 9,-22 0,-4 Z" fill="none" stroke="#f7f6f0" stroke-width="7"/>
+  <path d="M0,-5 C -5,-24 -15,-38 -11,-58 C -9,-74 -4,-86 0,-94" fill="none" stroke="#e2966f" stroke-width="3"/>
+</g>
+<g id="hmark">
+  <use href="#hpetalShape" transform="rotate(0) translate(16,0) rotate(-28)"/>
+  <use href="#hpetalShape" transform="rotate(72) translate(16,0) rotate(-28)"/>
+  <use href="#hpetalShape" transform="rotate(144) translate(16,0) rotate(-28)"/>
+  <use href="#hpetalShape" transform="rotate(216) translate(16,0) rotate(-28)"/>
+  <use href="#hpetalShape" transform="rotate(288) translate(16,0) rotate(-28)"/>
+  <use href="#hpetalShape" transform="rotate(0) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#hpetalShape" transform="rotate(72) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#hpetalShape" transform="rotate(144) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#hpetalShape" transform="rotate(216) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#hpetalShape" transform="rotate(288) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+</g>
+</defs>
+<g transform="translate(200,200)">
+  <g transform="scale(1,0.52) rotate(-16)">
+    <use href="#hmark"/>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 220 240" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<g id="petalShape">
+  <path d="M0,-4 C -9,-22 -25,-34 -23,-58 C -21,-78 -9,-90 0,-95 C 9,-90 21,-78 23,-58 C 25,-34 9,-22 0,-4 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+  <path d="M0,-5 C -5,-24 -15,-38 -11,-58 C -9,-74 -4,-86 0,-94" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M2,-8 C 6,-24 11,-38 8,-55" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+  <path d="M-3,-10 C -12,-26 -21,-40 -18,-56" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+</g>
+<clipPath id="clipPrev" clipPathUnits="userSpaceOnUse">
+  <path d="M-300,-300 H300 V300 H-300 Z" fill-rule="evenodd"/>
+  <path d="M0,-4 C -9,-22 -25,-34 -23,-58 C -21,-78 -9,-90 0,-95 C 9,-90 21,-78 23,-58 C 25,-34 9,-22 0,-4 Z" transform="rotate(-72) translate(16,0) rotate(-28)" fill-rule="evenodd"/>
+</clipPath>
+<clipPath id="clipPrevAndWrap" clipPathUnits="userSpaceOnUse">
+  <path d="M-300,-300 H300 V300 H-300 Z" fill-rule="evenodd"/>
+  <path d="M0,-4 C -9,-22 -25,-34 -23,-58 C -21,-78 -9,-90 0,-95 C 9,-90 21,-78 23,-58 C 25,-34 9,-22 0,-4 Z" transform="rotate(-72) translate(16,0) rotate(-28)" fill-rule="evenodd"/>
+  <path d="M0,-4 C -9,-22 -25,-34 -23,-58 C -21,-78 -9,-90 0,-95 C 9,-90 21,-78 23,-58 C 25,-34 9,-22 0,-4 Z" transform="rotate(72) translate(16,0) rotate(-28)" fill-rule="evenodd"/>
+</clipPath>
+<g id="mark">
+  <use href="#petalShape" transform="rotate(0) translate(16,0) rotate(-28)"/>
+  <use href="#petalShape" transform="rotate(72) translate(16,0) rotate(-28)" clip-path="url(#clipPrev)"/>
+  <use href="#petalShape" transform="rotate(144) translate(16,0) rotate(-28)" clip-path="url(#clipPrev)"/>
+  <use href="#petalShape" transform="rotate(216) translate(16,0) rotate(-28)" clip-path="url(#clipPrev)"/>
+  <use href="#petalShape" transform="rotate(288) translate(16,0) rotate(-28)" clip-path="url(#clipPrevAndWrap)"/>
+  <use href="#petalShape" transform="rotate(0) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#petalShape" transform="rotate(72) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#petalShape" transform="rotate(144) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#petalShape" transform="rotate(216) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+  <use href="#petalShape" transform="rotate(288) translate(16,0) rotate(-28) translate(0,-95) rotate(-60) scale(0.6)"/>
+</g>
+</defs>
+<g transform="translate(110,130)">
+  <g transform="scale(1,0.52) rotate(-16)">
+    <use href="#mark" transform="translate(2,2.5) scale(0.99)" opacity="1" style="color:#1f3529"/>
+    <use href="#mark" style="color:#8fbfa0"/>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Bentham Lab</title>
+<meta name="description" content="Contact the Bentham Lab, Department of Biosciences, Durham University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,440;9..144,560&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/svg+xml" href="assets/logo/bentham-lab-favicon.svg">
+</head>
+<body data-page="contact.html">
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="wordmark">
+      <img src="assets/logo/bentham-lab-mark-header.svg" alt="" class="wordmark-mark">
+      <span>Bentham Lab
+      <small>CPBM · Department of Biosciences · Durham University</small>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
+    <nav class="main-nav" id="mainnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="recognition.html">News &amp; Talks</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header container">
+    <span class="eyebrow">Contact</span>
+    <h1>Get in touch</h1>
+    <p class="lede">For research enquiries, collaboration, or prospective student and postdoc applications.</p>
+  </section>
+
+  <section class="section container">
+    <div class="contact-block">
+      <div>
+        <h3>Adam Bentham</h3>
+        <p>Assistant Professor<br>Department of Biosciences, Durham University</p>
+        <p><a href="mailto:adam.r.bentham@durham.ac.uk">adam.r.bentham@durham.ac.uk</a></p>
+        <p><a href="https://www.durham.ac.uk/staff/adam-r-bentham/">Durham staff profile →</a></p>
+        <a class="btn" href="mailto:adam.r.bentham@durham.ac.uk">Email the lab →</a>
+      </div>
+
+      <div>
+        <h3>Address</h3>
+        <p class="muted">Department of Biosciences<br>Durham University<br>Chemistry Building, Stockton Rd<br>Durham DH1 3LE<br>United Kingdom</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <span class="eyebrow">Supported by</span>
+  <div class="funders">
+    <div class="funder-item">
+      <img class="funder-logo" src="assets/logos/bspp.png" alt="British Society for Plant Pathology">
+      <span class="funder-name">BSPP</span>
+    </div>
+    <div class="funder-item">
+      <img class="funder-logo" src="assets/logos/rank-prize.png" alt="Rank Prize">
+      <span class="funder-name">Rank Prize</span>
+    </div>
+    <div class="funder-item">
+      <img class="funder-logo" src="assets/logos/gatsby-foundation.png" alt="Gatsby Charitable Foundation">
+      <span class="funder-name">Gatsby Foundation</span>
+    </div>
+  </div>
+
+  <div class="footer-grid">
+    <div>
+      <h4>Bentham Lab</h4>
+      <p class="muted">Department of Biosciences<br>Durham University<br>Chemistry Building, Stockton Rd<br>Durham DH1 3LE, United Kingdom</p>
+    </div>
+    <div>
+      <h4>Affiliations</h4>
+      <ul>
+        <li><a href="https://heddlelab.org">Centre for Programmable Biological Matter</a></li>
+        <li><a href="https://www.durham.ac.uk/staff/adam-r-bentham/">Durham staff profile</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/adam-bentham-4842b2176/">LinkedIn</a></li>
+        <li><a href="https://bsky.app/profile/adamrbentham.bsky.social">Bluesky</a></li>
+        <li><a href="https://x.com/AdamRBentham">Twitter / X</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="recognition.html">News &amp; Talks</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Bentham Lab</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+</script>
+<script src="scroll-continue.js"></script>
+
+</body>
+</html>
