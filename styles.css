@@ -275,14 +275,19 @@ nav.main-nav a[aria-current="page"] {
 /* ---------------- Gallery (From the lab) ---------------- */
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  align-items: flex-start;
   gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
-
-@media (max-width: 860px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+.gallery::-webkit-scrollbar { display: none; }
 
 .gallery-item {
+  flex: 0 0 260px;
+  scroll-snap-align: start;
   aspect-ratio: 4 / 5;
   border: 1px dashed var(--line);
   border-radius: 3px;
