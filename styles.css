@@ -523,6 +523,18 @@ nav.main-nav a[aria-current="page"] {
 .divider svg { width: 22px; height: 14px; flex: none; }
 .divider .rule { flex: 1; }
 
+/* ---------------- Page-break (scroll-transition marker) ---------------- */
+
+.page-break {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 48px;
+  color: var(--ink-faint);
+}
+.page-break-rule { flex: 1; height: 1px; background: var(--line); }
+.page-break-mark { width: 40px; height: 20px; flex: none; }
+
 /* ---------------- Content blocks (Research page etc) ---------------- */
 
 .research-block {

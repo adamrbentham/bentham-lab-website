@@ -108,6 +108,20 @@
         marker.className = "loaded-page" + (reduceMotion ? " is-visible" : "");
         marker.setAttribute("data-page", next);
         marker.setAttribute("data-title", doc.title || "");
+
+        var pageBreak = document.createElement("div");
+        pageBreak.className = "page-break container";
+        pageBreak.setAttribute("role", "presentation");
+        pageBreak.setAttribute("aria-hidden", "true");
+        pageBreak.innerHTML =
+          '<span class="page-break-rule"></span>' +
+          '<svg class="page-break-mark" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">' +
+          '<circle cx="20" cy="10" r="7.5" fill="none" stroke="#e2966f" stroke-width="1.3" stroke-dasharray="2.6 2.6"/>' +
+          '<circle cx="20" cy="10" r="2.2" fill="#e2966f"/>' +
+          "</svg>" +
+          '<span class="page-break-rule"></span>';
+        marker.appendChild(pageBreak);
+
         while (nextMain.firstChild) {
           marker.appendChild(nextMain.firstChild);
         }
