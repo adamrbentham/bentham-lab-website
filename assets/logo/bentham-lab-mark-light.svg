@@ -29,9 +29,7 @@
 </g>
 </defs>
 <g transform="translate(110,130)">
-  <g transform="scale(1,0.52) rotate(-16)">
-    <use href="#mark" transform="translate(2,2.5) scale(0.99)" opacity="1" style="color:#e2966f"/>
-    <use href="#mark" style="color:#8fbfa0"/>
-  </g>
+  <use href="#mark" transform="translate(2,2.5) scale(0.99)" opacity="1" style="color:#e2966f"/>
+  <use href="#mark" style="color:#8fbfa0"/>
 </g>
 </svg>
