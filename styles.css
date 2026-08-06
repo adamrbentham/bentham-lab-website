@@ -539,7 +539,7 @@ nav.main-nav a[aria-current="page"] {
 }
 .page-break-helix svg { display: block; width: 100%; height: 100%; }
 .page-break-helix--mirror svg { transform: scaleX(-1); }
-.page-break-mark { width: 40px; height: 20px; flex: none; }
+.page-break-mark { width: 44px; height: 44px; flex: none; }
 
 /* ---------------- Content blocks (Research page etc) ---------------- */
 
