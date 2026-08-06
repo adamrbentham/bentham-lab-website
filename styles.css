@@ -555,6 +555,26 @@ nav.main-nav a[aria-current="page"] {
 @media (max-width: 760px) { .people-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .people-grid { grid-template-columns: 1fr; } }
 
+.people-tier { margin-top: 48px; }
+.people-tier:first-child { margin-top: 0; }
+
+.people-tier-label {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clay-bright);
+  margin: 0 0 18px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.people-tier:first-child .people-tier-label {
+  padding-top: 0;
+  border-top: none;
+}
+
 .person-card {
   border: 1px solid var(--line);
   border-radius: 4px;
