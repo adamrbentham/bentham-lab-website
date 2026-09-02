@@ -348,6 +348,100 @@ nav.main-nav a[aria-current="page"] {
 }
 .gallery-item .item-body p { font-size: 0.85rem; margin-bottom: 0.4em; }
 
+.item-photo.has-lightbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.item-photo.has-lightbox:hover img {
+  opacity: 0.88;
+}
+
+.photo-count {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  background: rgba(31, 53, 41, 0.78);
+  border-radius: 3px;
+  padding: 3px 7px;
+  pointer-events: none;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 53, 41, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 40px;
+}
+
+.lightbox-overlay.is-hidden { display: none; }
+
+.lightbox-overlay img {
+  max-width: min(90vw, 900px);
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 4px;
+  display: block;
+}
+
+.lightbox-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.lightbox-counter {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: rgba(247, 246, 240, 0.1);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(247, 246, 240, 0.2);
+}
+
+.lightbox-close { top: 24px; right: 24px; }
+.lightbox-prev { left: 24px; top: 50%; transform: translateY(-50%); }
+.lightbox-next { right: 24px; top: 50%; transform: translateY(-50%); }
+
+@media (max-width: 640px) {
+  .lightbox-overlay { padding: 16px; }
+  .lightbox-prev, .lightbox-next { width: 36px; height: 36px; }
+  .lightbox-prev { left: 8px; }
+  .lightbox-next { right: 8px; }
+  .lightbox-close { top: 12px; right: 12px; }
+}
+
 /* ---------------- Two column: news + sidebar ---------------- */
 
 .split {
