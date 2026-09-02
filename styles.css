@@ -331,6 +331,9 @@ nav.main-nav a[aria-current="page"] {
   box-sizing: border-box;
   padding: 16px;
 }
+.gallery-item .item-photo.is-wide {
+  aspect-ratio: 16 / 9;
+}
 .gallery-item .item-body {
   padding: 14px 16px 18px;
   text-align: left;
