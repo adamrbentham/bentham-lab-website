@@ -73,6 +73,45 @@
     </div>
   </section>
 
+  <section class="section container" id="message">
+    <span class="eyebrow">Message</span>
+    <h2 class="mt-0">Send a message</h2>
+    <p>Use this form to contact Adam directly. Messages are delivered by email to the Durham address above.</p>
+
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="8e58a47e-db89-4c75-9f72-aee420f8c6d7">
+      <input type="hidden" name="subject" value="New message from benthamlab.org">
+      <input type="hidden" name="from_name" value="benthamlab.org contact form">
+      <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="form-row">
+        <label for="cf-name">Name</label>
+        <input id="cf-name" type="text" name="name" required autocomplete="name">
+      </div>
+      <div class="form-row">
+        <label for="cf-email">Email</label>
+        <input id="cf-email" type="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="cf-topic">Topic</label>
+        <select id="cf-topic" name="topic">
+          <option>General enquiry</option>
+          <option>PhD studentship</option>
+          <option>Postdoc or fellowship</option>
+          <option>Internship or visit</option>
+          <option>Collaboration</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="7" required></textarea>
+      </div>
+      <p class="form-note muted">Your name, email and message are sent to Adam by email via Web3Forms and are used only to reply to you.</p>
+      <button class="btn" type="submit">Send message →</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
 </main>
 
 <footer class="site-footer container">
@@ -139,6 +178,7 @@
     });
   }
 </script>
+<script src="contact-form.js"></script>
 <script src="scroll-continue.js"></script>
 
 </body>
